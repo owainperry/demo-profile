@@ -1,0 +1,15 @@
+apiVersion: weave.works/v1alpha1
+kind: ProfileInstallation
+metadata:
+  creationTimestamp: null
+  name: pname
+  namespace: default
+spec:
+  gitRepository:
+    name: profile-gitops-config
+    namespace: flux-system
+  source:
+    branch: main
+    path: .
+    url: https://github.com/owainperry/demo-profile.git
+status: {}
